@@ -17,7 +17,7 @@
 ![VSCode](/images/logo-VSCode.png)
 
 #### Combinação do Jogador
-![Jogo Pedra, Papel e Tesoura](/images/combinacao.jpeg)
+![Jogo Pedra, Papel e Tesoura](/images/combinacaoJogador.jpeg)
 >@douglasabnovato
 
 ## Terminado o projeto `Jogo Pedra, Papel e Tesoura em HTML, CSS e JavaScript`
