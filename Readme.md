@@ -16,6 +16,10 @@
 ![Youtube](/images/logo-youtube.png)
 ![VSCode](/images/logo-VSCode.png)
 
+#### Combinação
+![Jogo Pedra, Papel e Tesoura](/images/combinacao.jpeg)
+>@douglasabnovato
+
 ## Terminado o projeto `Jogo Pedra, Papel e Tesoura em HTML, CSS e JavaScript`
 ![Jogo Pedra, Papel e Tesoura](/images/pedra-papel-tesoura.png)
 >@douglasabnovato
