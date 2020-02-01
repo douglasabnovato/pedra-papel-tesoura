@@ -16,7 +16,7 @@
 ![Youtube](/images/logo-youtube.png)
 ![VSCode](/images/logo-VSCode.png)
 
-#### Combinação
+#### Combinação do Jogador
 ![Jogo Pedra, Papel e Tesoura](/images/combinacao.jpeg)
 >@douglasabnovato
 
