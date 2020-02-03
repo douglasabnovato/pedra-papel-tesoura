@@ -37,7 +37,7 @@
 
             #computador{
                 background-color: #74b9ff;
-            }
+            }   
 
             #versus{
                 font-size: 40px;
@@ -79,13 +79,15 @@
                 display: inline;
             } 
 
-            ul#jogador-escolha li a:hover{
-                opacity: 1;
-            }           
-
             ul#jogador-escolha li a, ul#computador-escolha li a{
                 opacity: .2;
             }
+
+            ul#jogador-escolha li a:hover, 
+            ul#jogador-escolha li a.selecionado, 
+            ul#computador-escolha li a.selecionado{
+                opacity: 1;
+            }           
 
             ul#jogador-escolha li a img, ul#computador-escolha li a img{
                 max-width: 80px;
@@ -129,44 +131,70 @@
         </div>    
         <script>
             var jogadorEscolha = 0;
+            var jogadorPontuacao = 0;   
             var computadorEscolha = 0;
+            var computadorPontuacao = 0; 
             var ganhador = -1;
 
             function jogar(escolha){
                 jogadorEscolha = escolha;
                 computadorEscolha = Math.floor((Math.random() * (3 -  1 + 1))) + 1;
-                alert(computadorEscolha);
-                
+                                
                 //1 - pedra //2 - papel //3 - tesoura
-
+                
                 if((jogadorEscolha == 1) && (computadorEscolha == 1)){
-                    ganhador = 0;
+                    ganhador = 0;//empate
                 }else if((jogadorEscolha == 1) && (computadorEscolha == 2)){
-                    ganhador = 2;
+                    ganhador = 2;//computador 
                 }
                 else if((jogadorEscolha == 1) && (computadorEscolha == 3)){
-                    ganhador = 1;
+                    ganhador = 1;//jogador 
                 }
 
                 if((jogadorEscolha == 2) && (computadorEscolha == 1)){
-                    ganhador = 1; 
+                    ganhador = 1; //jogador 
                 }else if((jogadorEscolha == 2) && (computadorEscolha == 2)){
-                    ganhador = 0; 
+                    ganhador = 0; //empate
                 }
                 else if((jogadorEscolha == 2) && (computadorEscolha == 3)){
-                    ganhador = 2; 
+                    ganhador = 2; //computador 
                 }
 
                 if((jogadorEscolha == 3) && (computadorEscolha == 1)){
-                    ganhador = 2; 
+                    ganhador = 2; //computador
+                    computadorPontuacao++;
                 }else if((jogadorEscolha == 3) && (computadorEscolha == 2)){
-                    ganhador = 1; 
+                    ganhador = 1; //jogador 
                 }
                 else if((jogadorEscolha == 3) && (computadorEscolha == 3)){
-                    ganhador = 0; 
+                    ganhador = 0; //empate
                 }
 
+                document.getElementById("jogador-escolha-1").classList.remove('selecionado');
+                document.getElementById("jogador-escolha-2").classList.remove('selecionado');
+                document.getElementById("jogador-escolha-3").classList.remove('selecionado');
+                document.getElementById("computador-escolha-1").classList.remove('selecionado');
+                document.getElementById("computador-escolha-2").classList.remove('selecionado');
+                document.getElementById("computador-escolha-3").classList.remove('selecionado');
 
+
+                //exibir ação dos jogadores
+                document.getElementById("jogador-escolha-" + jogadorEscolha).classList.add('selecionado');
+                document.getElementById("computador-escolha-" + computadorEscolha).classList.add('selecionado');
+
+                if(ganhador == 0){
+                    document.getElementById('mensagens').innerHTML = 'Empate';                    
+                }
+                else if(ganhador == 1){
+                    document.getElementById('mensagens').innerHTML = 'Jogador Ganhou';   
+                    jogadorPontuacao++;                 
+                }
+                else if(ganhador == 2){
+                    document.getElementById('mensagens').innerHTML = 'Computador Ganhou'; 
+                    computadorPontuacao++;                   
+                }
+
+                document.getElementById('jogador-escolha-3').innerHTML = 'jogadorPontuacao'; 
             }
         </script>
     </body>
