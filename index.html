@@ -105,41 +105,60 @@
     </head>
     <body> 
         <div id="principal">
-            <h1 id="titulo">Rock Paper Scissors</h1>
-            <div id="placar">                            
+            <h1 id="titulo">Pedra Papel Tesoura</h1>
+            <div id="placar">
+
                 <div id="jogador">
-                    <h2 id="jogador-nome">Eu</h2>
+                    <h2 id="jogador-nome">Jogador</h2>
                     <span id="jogador-pontos">0</span>
                     <ul id="jogador-escolha">
                         <li><a id="jogador-escolha-1" onclick="jogar(1)"><img src="images/pedra.png" alt="pedra"></a></li>
                         <li><a id="jogador-escolha-2" onclick="jogar(2)"><img src="images/papel.png" alt="papel"></a></li>
                         <li><a id="jogador-escolha-3" onclick="jogar(3)"><img src="images/tesoura.png" alt="tesoura"></a></li>
                     </ul>
-                </div>
+                </div><!-- the end jogador --> 
+                
                 <div id="versus">vs</div>
+
                 <div id="computador">
                     <h2 id="computador-nome">Computador</h2>
                     <span id="computador-pontos">0</span>
                     <ul id="computador-escolha">
-                        <li><a id="jogador-escolha-1"><img src="images/pedra.png" alt="pedra"></a></li>
-                        <li><a id="jogador-escolha-2"><img src="images/papel.png" alt="papel"></a></li>
-                        <li><a id="jogador-escolha-3"><img src="images/tesoura.png" alt="tesoura"></a></li>
+                        <li><a id="computador-escolha-1"><img src="images/pedra.png" alt="pedra"></a></li>
+                        <li><a id="computador-escolha-2"><img src="images/papel.png" alt="papel"></a></li>
+                        <li><a id="computador-escolha-3"><img src="images/tesoura.png" alt="tesoura"></a></li>
                     </ul>
-                </div> 
-            </div> 
-            <div id="mensagens">mensagens</div>                      
-        </div>    
+                </div> <!-- the end computador -->
+
+            </div><!-- the end placar --> 
+            <div id="mensagens">&nbsp;</div>                      
+        </div> <!-- the end principal -->
         <script>
             var jogadorEscolha = 0;
             var jogadorPontuacao = 0;   
             var computadorEscolha = 0;
             var computadorPontuacao = 0; 
             var ganhador = -1;
+            var repeticaoJogada = 0;
+            var computadorEscolhaAnterior = 0;
 
             function jogar(escolha){
                 jogadorEscolha = escolha;
-                computadorEscolha = Math.floor((Math.random() * (3 -  1 + 1))) + 1;
-                                
+                computadorEscolhaAnterior = computadorEscolha;   
+
+                //lógico do funcionamento das jogadas do computador                          
+                computadorEscolha = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
+
+                if(computadorEscolhaAnterior == computadorEscolha){
+                    repeticaoJogada++;
+                    if(repeticaoJogada > 2){
+                        if(computadorEscolha == 1 || computadorEscolha == 2)
+                            computadorEscolha = computadorEscolha + 1;
+                        if(computadorEscolha == 3)
+                            computadorEscolha = computadorEscolha - 2;
+                    }
+                }//final da lógica
+
                 //1 - pedra //2 - papel //3 - tesoura
                 
                 if((jogadorEscolha == 1) && (computadorEscolha == 1)){
@@ -194,7 +213,8 @@
                     computadorPontuacao++;                   
                 }
 
-                document.getElementById('jogador-escolha-3').innerHTML = 'jogadorPontuacao'; 
+                document.getElementById('jogador-pontos').innerHTML = jogadorPontuacao; 
+                document.getElementById('computador-pontos').innerHTML = computadorPontuacao; 
             }
         </script>
     </body>
