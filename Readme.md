@@ -3,7 +3,7 @@
 ### Criação: 31 de janeiro de 2020
 ### Atualização: 03 de fevereiro de 2020
 ### Terminado: Sim
-### Publicado: Publicado
+### Publicado: Sim
 ### Prática : @douglasabnovato
 
 ## Desafio do projeto `criar Jogo Pedra, Papel e Tesoura em HTML, CSS e JavaScript`
