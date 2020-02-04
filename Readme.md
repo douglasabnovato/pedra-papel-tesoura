@@ -22,6 +22,7 @@
 
 ## Terminado o projeto `Jogo Pedra, Papel e Tesoura em HTML, CSS e JavaScript`
 ![Jogo Pedra, Papel e Tesoura](/images/pedra-papel-tesoura.png)
+[Pedra Papel Tesoura](https://douglasabnovato.github.io/pedra-papel-tesoura/)
 >@douglasabnovato
 
 :. Do curso Youtube - Jogo Pedra, Papel e Tesoura em HTML, CSS e JavaScript : `https://www.youtube.com/watch?v=JP3eYU137t8&t=15s`</br>
