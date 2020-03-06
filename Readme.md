@@ -1,12 +1,12 @@
 ## Jogo Pedra, Papel e Tesoura em HTML, CSS e JavaScript
 
 ### Criação: 31 de janeiro de 2020
-### Atualização: 03 de fevereiro de 2020
+### Atualização: 06 de março de 2020
 ### Terminado: Sim
 ### Publicado: Sim
 ### Prática : @douglasabnovato
 
-## Desafio do projeto `criar Jogo Pedra, Papel e Tesoura em HTML, CSS e JavaScript`
+## Desafio do projeto `Jogo Pedra, Papel e Tesoura em HTML, CSS e JavaScript`
 - Esse projeto é para criar o jogo Pedra Papel e Tesoura em HTML, Css e JS, sem auxílio de biblioteca, com o objetivo de programar a mão.
 
 ### Ferramentas :
