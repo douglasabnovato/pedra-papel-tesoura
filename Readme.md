@@ -1,4 +1,4 @@
-## Jogo Pedra, Papel e Tesoura em HTML, CSS e JavaScript
+## Jogo Pedra Papel e Tesoura em HTML, CSS e JavaScript
 
 ### Criação: 31 de janeiro de 2020
 ### Atualização: 06 de março de 2020
@@ -20,7 +20,7 @@
 ![Jogo Pedra, Papel e Tesoura](/images/combinacaoJogador.jpeg)
 >@douglasabnovato
 
-## Terminado o projeto `Jogo Pedra, Papel e Tesoura em HTML, CSS e JavaScript`
+## Terminado o projeto `Jogo Pedra Papel e Tesoura em HTML, CSS e JavaScript`
 ![Jogo Pedra, Papel e Tesoura](/images/pedra-papel-tesoura.png)</br>
 #### Publicado via Surge.sh em [Pedra Papel Tesoura](game-pedra-papel-e-tesoura.surge.sh)
 >@douglasabnovato
