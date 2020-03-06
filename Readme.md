@@ -22,7 +22,7 @@
 
 ## Terminado o projeto `Jogo Pedra Papel e Tesoura em HTML, CSS e JavaScript`
 ![Jogo Pedra, Papel e Tesoura](/images/pedra-papel-tesoura.png)</br>
-#### Publicado via Surge.sh em [Pedra Papel Tesoura](game-pedra-papel-e-tesoura.surge.sh)
+#### Publicado via Surge.sh em [Jogo Pedra, Papel e Tesoura](http://game-pedra-papel-e-tesoura.surge.sh)
 >@douglasabnovato
 
 :. Do curso Youtube - Jogo Pedra, Papel e Tesoura em HTML, CSS e JavaScript : `https://www.youtube.com/watch?v=JP3eYU137t8&t=15s`</br>
