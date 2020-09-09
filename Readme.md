@@ -30,5 +30,5 @@ A criação dessa aplicação foi pensada em desktop mas pode ser usada em mobil
 - Layout final <br/>
 ![Jogo Pedra, Papel e Tesoura](/images/pedra-papel-tesoura.png)<br/>
 
-:. [Linkedin - @douglasabnovato](https://www.linkedin.com/in/douglasabnovato/)
+:. [Linkedin - @douglasabnovato](https://www.linkedin.com/in/douglasabnovato/)<br/>
 .. De [Felipe Fontoura - Canal Dev Samurai](https://www.youtube.com/watch?v=JP3eYU137t8&t=15s)
